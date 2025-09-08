@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Likky Rohan Vittesh Reddy | Portfolio</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #f4f7fb, #e3f2fd);
+        color: #333;
+        scroll-behavior: smooth;
+      }
+      h1,
+      h2,
+      h3 {
+        margin-bottom: 15px;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 50px;
+        background: #1a1a1a;
+        color: #fff;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+      nav h2 {
+        font-size: 1.5rem;
+        color: #ff4081;
+      }
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 25px;
+      }
+      nav ul li a {
+        color: #fff;
+        font-weight: 600;
+        transition: color 0.3s;
+      }
+      nav ul li a:hover {
+        color: #ff4081;
+      }
+
+      #home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 120px 20px;
+        background: linear-gradient(135deg, #0ef, #6a11cb, #2575fc);
+        color: #fff;
+        border-radius: 0 0 80px 80px;
+      }
+      #home h1 {
+        font-size: 2.8rem;
+        margin-bottom: 15px;
+      }
+      #home p {
+        font-size: 1.3rem;
+      }
+      .typing {
+        color: yellow;
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
+
+      .fade-in {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.8s ease-in-out;
+      }
+      .fade-in.show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      section {
+        padding: 80px 20px;
+        max-width: 1100px;
+        margin: auto;
+      }
+      #about,
+      #education {
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        padding: 40px;
+        line-height: 1.7;
+      }
+
+      .project-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 25px;
+      }
+      .project {
+        background: #fff;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+      .project:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+      }
+      .project h3 {
+        color: #2575fc;
+      }
+
+      .skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-top: 20px;
+        justify-content: center;
+      }
+      .skill {
+        background: linear-gradient(135deg, #ff4081, #ff9100);
+        color: #fff;
+        padding: 12px 18px;
+        border-radius: 25px;
+        font-size: 0.95rem;
+        font-weight: 600;
+        transition: transform 0.3s;
+      }
+      .skill:hover {
+        transform: scale(1.1);
+      }
+
+      #contact {
+        text-align: center;
+      }
+      .contact-links a {
+        display: inline-block;
+        margin: 10px;
+        padding: 12px 25px;
+        background: linear-gradient(135deg, #6a11cb, #2575fc);
+        color: #fff;
+        border-radius: 8px;
+        transition: background 0.3s, transform 0.2s;
+        font-weight: 600;
+      }
+      .contact-links a:hover {
+        background: #ff4081;
+        transform: scale(1.05);
+      }
+
+      footer {
+        text-align: center;
+        padding: 20px;
+        background: #1a1a1a;
+        color: #fff;
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <h2>My Portfolio</h2>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#technical-skills">Technical Skills</a></li>
+        <li><a href="#soft-skills">Soft Skills</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section id="home">
+      <p
+        style="
+          background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa1W9-YAuE0dk_PTTOsZHv1DBomlYoQkPWxg&s');
+        "
+      ></p>
+      <h1>Hi, I'm Likky Rohan Vittesh Reddy</h1>
+      <p class="typing"></p>
+    </section>
+
+    <section id="about" class="fade-in">
+      <h2>About Me</h2>
+      <p>
+        I am <b>Likky Rohan Vittesh Reddy</b>, a passionate web developer and AI
+        enthusiast who loves building creative digital experiences. Coding is
+        not just a skill for me, it’s an art form where I combine logic with
+        design to solve real-world problems.
+      </p>
+    </section>
+
+    <section id="projects" class="fade-in">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project">
+          <h3>Calculator</h3>
+          <p>
+            A simple calculator built with HTML, CSS, and JavaScript to perform
+            basic arithmetic operations.
+          </p>
+        </div>
+        <div class="project">
+          <h3>Gym Landing Page</h3>
+          <p>
+            A responsive landing page for a gym with smooth scrolling,
+            animations, and a modern design.
+          </p>
+        </div>
+        <div class="project">
+          <h3>Memory Game</h3>
+          <p>
+            A fun interactive game where players flip cards to match pairs,
+            testing memory skills (HTML, CSS, JS).
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="technical-skills" class="fade-in">
+      <h2>Technical Skills</h2>
+      <div class="skills">
+        <div class="skill">💻 HTML</div>
+        <div class="skill">🎨 CSS</div>
+        <div class="skill">⚡ JavaScript</div>
+        <div class="skill">⚙️ Python</div>
+        <div class="skill">☕ Java</div>
+        <div class="skill">⚛️ React.js</div>
+        <div class="skill">🛠️ Problem Solving (DSA)</div>
+      </div>
+    </section>
+
+    <section id="soft-skills" class="fade-in">
+      <h2>Soft Skills</h2>
+      <div class="skills">
+        <div class="skill">🗣️ Communication</div>
+        <div class="skill">📢 Advertising</div>
+        <div class="skill">🤝 Relationship Building</div>
+        <div class="skill">🎯 Responsibility</div>
+        <div class="skill">💡 Critical Thinking</div>
+        <div class="skill">⚡ Handling Pressure</div>
+      </div>
+    </section>
+
+    <section id="achievements" class="fade-in">
+      <h2>Achievements & Certifications</h2>
+      <ul
+        style="
+          line-height: 1.8;
+          font-size: 1.05rem;
+          list-style: none;
+          padding: 0;
+        "
+      >
+        <li>✅ Problem Solving using C – <b>CodeTantra</b></li>
+        <li>✅ Complete HTML Course – <b>Great Learning Academy</b></li>
+        <li>✅ SQL Basics – <b>Newton School</b></li>
+        <li>🚀 Full Stack Development – <b>Udemy</b> (Upcoming)</li>
+        <li>
+          🏆 Smart Coder Certification – <b>Smart Interviews</b> (DSA Training)
+        </li>
+        <li>🎨 Design-a-thon Participant – <b>VNR College</b></li>
+        <li>📌 GitHub Basics – <b>Newton School</b></li>
+      </ul>
+    </section>
+
+    <section id="education" class="fade-in">
+      <h2>Education</h2>
+      <p><b>Pre-University:</b> Resonance Junior College, Habsiguda — 84%</p>
+      <p>
+        <b>Undergraduate:</b> B.Tech in Computer Science (AI & ML), Sreenidhi
+        Institute of Science and Technology
+      </p>
+      <p>CGPA: 8.1 (till 3rd semester, awaiting 4th semester results)</p>
+      <p>
+        <b>Special Training:</b> Currently pursuing
+        <b>Smart Interviews Student Training Program</b>, focused on mastering
+        problem-solving in <b>DSA & Advanced DSA</b>. Achieved
+        <b>Bronze Coder</b> level.
+      </p>
+    </section>
+
+    <section id="contact" class="fade-in">
+      <h2>Contact Me</h2>
+      <p>Let's connect and build something amazing!</p>
+      <div class="contact-links">
+        <a href="mailto:rohan.reddyw@gmail.com">Email</a>
+        <a href="https://linkedin.com/in/likkyrohan" target="_blank"
+          >LinkedIn</a
+        >
+        <a href="https://github.com/rohan-reddy05" target="_blank">GitHub</a>
+        <a href="tel:+916304192567">Phone</a>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Likky Rohan Vittesh Reddy. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+      const text = "Aspiring Web Developer | AI Enthusiast | Problem Solver";
+      let i = 0;
+      function typingEffect() {
+        if (i < text.length) {
+          document.querySelector(".typing").innerHTML += text.charAt(i);
+          i++;
+          setTimeout(typingEffect, 100);
+        }
+      }
+      typingEffect();
+
+      const faders = document.querySelectorAll(".fade-in");
+      const appearOptions = { threshold: 0.3 };
+      const appearOnScroll = new IntersectionObserver(function (
+        entries,
+        observer
+      ) {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("show");
+          observer.unobserve(entry.target);
+        });
+      },
+      appearOptions);
+
+      faders.forEach((fader) => {
+        appearOnScroll.observe(fader);
+      });
+    </script>
+  </body>
+</html>
